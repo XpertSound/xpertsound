@@ -97,7 +97,7 @@ mobile original. Funky, Salsa, Reggae, Disco et musiques festives adaptées à v
 
 <div class="feature">
 <h3>🚲 DJ Mobile</h3>
-<p>Concept original qui attire immédiatement l’attention.</p>
+<p>Concept original qui attire immédiatement l'attention.</p>
 </div>
 
 <div class="feature">
@@ -121,13 +121,12 @@ mobile original. Funky, Salsa, Reggae, Disco et musiques festives adaptées à v
 
 <h2>Contact</h2>
 
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci">
-  <input type="hidden" name="form-name" value="contact">
-  <p style="display:none"><label>Ne pas remplir : <input name="bot-field"></label></p>
+<form id="contactForm">
   <input type="text" name="nom" placeholder="Votre nom" required>
   <input type="email" name="email" placeholder="Votre email" required>
   <textarea name="message" placeholder="Parlez de votre événement" required></textarea>
   <button type="submit">Envoyer</button>
+  <div id="formMessage" class="form-message"></div>
 </form>
 
 <div class="social-links">
