@@ -10,39 +10,10 @@
 
 <meta name="description" content="DJ XpertSound à Montpellier spécialisé dans les soirées Funky, Disco, Salsa, Reggae et événements festifs. DJ mobile original pour anniversaires, mariages, soirées privées et événements publics.">
 
-<meta name="keywords" content="DJ Montpellier, DJ Hérault, DJ soirée Montpellier, Funky Disco Party, DJ Salsa, DJ Reggae, DJ événementiel, DJ mariage Montpellier, animation musicale Montpellier, DJ mobile, XpertSound">
-
-<meta name="author" content="DJ XpertSound">
-<meta name="robots" content="index, follow">
-<meta name="language" content="fr">
-<meta name="revisit-after" content="7 days">
-
-<link rel="canonical" href="https://xpertsound.github.io/">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="DJ XpertSound Montpellier">
-<meta property="og:description" content="Découvrez l'univers Funky Disco Salsa Reggae de DJ XpertSound.">
-<meta property="og:url" content="https://xpertsound.github.io/">
-<meta property="og:image" content="https://xpertsound.github.io/assets/hero.png">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DJ XpertSound Montpellier">
-<meta name="twitter:description" content="Soirées Funky Disco Salsa Reggae à Montpellier.">
-<meta name="twitter:image" content="https://xpertsound.github.io/assets/hero.png">
-
-<meta name="theme-color" content="#050505">
-
-<link rel="icon" type="image/png" href="favicon.png">
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-/* ===== BASE ===== */
 *{margin:0;padding:0;box-sizing:border-box;}
 
 html{scroll-behavior:smooth;}
@@ -54,7 +25,6 @@ color:white;
 overflow-x:hidden;
 }
 
-/* ===== BACKGROUND ===== */
 .light-bg{
 position:fixed;
 width:100%;
@@ -72,17 +42,15 @@ from{transform:scale(1);}
 to{transform:scale(1.1);}
 }
 
-/* ===== HERO ===== */
 .hero{
 min-height:100vh;
+display:flex;
+flex-direction:column;
 background:
 linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
 url('assets/funky.png') center/cover no-repeat;
-display:flex;
-flex-direction:column;
 }
 
-/* ===== NAV ===== */
 nav{
 display:flex;
 justify-content:space-between;
@@ -96,17 +64,15 @@ font-weight:800;
 color:#ffd700;
 }
 
-/* ===== SOCIALS (MODIFIÉ AVEC ICÔNES) ===== */
+/* 🔥 ICONES SOCIAL */
 .socials{
 display:flex;
 gap:25px;
-align-items:center;
 }
 
 .socials a{
-text-decoration:none;
 color:white;
-font-size:22px;
+font-size:26px;
 transition:.3s;
 }
 
@@ -116,7 +82,6 @@ transform:scale(1.3);
 text-shadow:0 0 12px #ffd700;
 }
 
-/* ===== HERO CONTENT ===== */
 .hero-content{
 flex:1;
 display:flex;
@@ -128,34 +93,24 @@ padding:20px;
 }
 
 .hero-content h1{
-font-size:4.5rem;
+font-size:4rem;
 margin-bottom:20px;
 }
 
-.hero-content p{
-max-width:700px;
-line-height:1.8;
-font-size:1.1rem;
-}
-
-/* ===== PRIX ===== */
 .price-box{
 margin:35px 0;
 padding:25px 40px;
 border-radius:20px;
 background:rgba(255,215,0,.08);
 border:1px solid rgba(255,215,0,.35);
-backdrop-filter:blur(8px);
 }
 
 .price{
-display:block;
 font-size:4rem;
-font-weight:800;
 color:#ffd700;
+font-weight:800;
 }
 
-/* ===== BUTTON ===== */
 .btn{
 display:inline-block;
 padding:18px 35px;
@@ -164,7 +119,6 @@ color:black;
 text-decoration:none;
 border-radius:40px;
 font-weight:700;
-transition:.3s;
 }
 
 .btn:hover{
@@ -172,10 +126,10 @@ transform:scale(1.05);
 box-shadow:0 0 25px rgba(255,215,0,.4);
 }
 
-/* ===== SECTIONS ===== */
-section{padding:90px 8%;}
+section{
+padding:90px 8%;
+}
 
-/* ===== INTRO ===== */
 .intro{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -183,40 +137,27 @@ gap:50px;
 align-items:center;
 }
 
-/* ===== CARDS ===== */
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:25px;
-}
-
-.card{
-position:relative;
-overflow:hidden;
-border-radius:20px;
-cursor:pointer;
+margin-top:40px;
 }
 
 .card img{
 width:100%;
 height:420px;
 object-fit:cover;
-transition:.5s;
+border-radius:20px;
 }
 
-.card:hover img{transform:scale(1.05);}
-
 .overlay{
-position:absolute;
-bottom:0;
-width:100%;
-padding:20px;
-background:linear-gradient(transparent, rgba(0,0,0,.9));
+text-align:center;
+margin-top:-60px;
 font-size:1.5rem;
 font-weight:700;
 }
 
-/* ===== FEATURES ===== */
 .features{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -227,12 +168,8 @@ gap:25px;
 background:#111;
 padding:35px;
 border-radius:20px;
-transition:.3s;
 }
 
-.feature:hover{transform:translateY(-8px);}
-
-/* ===== CONTACT ===== */
 .contact form{
 display:flex;
 flex-direction:column;
@@ -241,25 +178,18 @@ max-width:700px;
 margin:auto;
 }
 
-.contact input,
-.contact textarea{
+input,textarea{
 padding:18px;
-border:none;
 border-radius:12px;
+border:none;
 background:#111;
 color:white;
 }
 
-/* ===== FOOTER ===== */
 footer{
 padding:25px;
 text-align:center;
 opacity:.7;
-}
-
-/* ===== SOCIAL ICONS SIZE ===== */
-.socials a i{
-font-size:28px;
 }
 
 </style>
@@ -276,24 +206,12 @@ font-size:28px;
 
 <div class="logo">XpertSound.fr</div>
 
-<!-- 🔥 ICI TES BOUTONS MODERNES -->
 <div class="socials">
 
-<a href="https://wa.me/babyrasta34" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<a href="https://www.instagram.com/xpertsound/" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.facebook.com/XpertSound" target="_blank">
-<i class="fab fa-facebook"></i>
-</a>
-
-<a href="https://www.youtube.com/user/babyrasta034/featured" target="_blank">
-<i class="fab fa-youtube"></i>
-</a>
+<a href="https://wa.me/babyrasta34"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.instagram.com/xpertsound/"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/XpertSound"><i class="fab fa-facebook"></i></a>
+<a href="https://www.youtube.com/user/babyrasta034/featured"><i class="fab fa-youtube"></i></a>
 
 </div>
 
@@ -303,22 +221,83 @@ font-size:28px;
 
 <h1>DJ Mobile en Vélo à Montpellier</h1>
 
-<p>
-Une ambiance élégante, festive et originale pour vos soirées privées.
-</p>
+<p>Ambiance Funky, Disco, Salsa et Reggae</p>
 
 <div class="price-box">
 <span class="price">150€</span>
-<span class="time">de 19h à minuit</span>
 </div>
 
-<a href="#contact" class="btn">Réserver votre soirée</a>
+<a class="btn" href="#contact">Réserver</a>
 
 </div>
 
 </header>
 
+<!-- ===== SECTION INTRO ===== -->
+<section class="intro">
+<div>
+<h2>Une prestation unique</h2>
+<p>Concept DJ mobile original, ambiance festive et élégante.</p>
+</div>
 
+<div>
+<img src="assets/hero.png">
+</div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section>
+<h2 style="text-align:center;color:#ffd700;">Ambiances</h2>
+
+<div class="cards">
+
+<div>
+<img src="assets/reggae.png">
+<div class="overlay">Reggae</div>
+</div>
+
+<div>
+<img src="assets/salsa.png">
+<div class="overlay">Salsa</div>
+</div>
+
+<div>
+<img src="assets/funky.png">
+<div class="overlay">Funky</div>
+</div>
+
+</div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="features">
+
+<div class="feature">DJ Mobile</div>
+<div class="feature">Ambiance Lumière</div>
+<div class="feature">Mix Live</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+
+<h2 style="text-align:center;color:#ffd700;">Contact</h2>
+
+<form>
+
+<input type="text" placeholder="Nom">
+<input type="email" placeholder="Email">
+<textarea placeholder="Message"></textarea>
+
+<button class="btn" type="submit">Envoyer</button>
+
+</form>
+
+</section>
+
+<footer>
+© XpertSound
+</footer>
 
 </body>
 </html>
