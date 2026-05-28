@@ -17,13 +17,11 @@
 
 <link rel="canonical" href="https://xpertsound.github.io/">
 
-<!-- 🔥 ICÔNES FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
-/* ===== NE TOUCHE PAS TON DESIGN ===== */
-
+/* ===== BASE ===== */
 *{
 margin:0;
 padding:0;
@@ -73,7 +71,7 @@ font-weight:800;
 color:#ffd700;
 }
 
-/* ===== 🔥 SOCIALS MODIFIÉES (ICÔNES UNIQUEMENT) ===== */
+/* ===== SOCIAL ICONS ===== */
 .socials{
 display:flex;
 gap:25px;
@@ -93,7 +91,7 @@ transform:scale(1.25);
 text-shadow:0 0 10px #ffd700;
 }
 
-/* ===== HERO CONTENT ===== */
+/* ===== HERO CONTENT (TAILLE RESTAURÉE) ===== */
 .hero-content{
 flex:1;
 display:flex;
@@ -105,27 +103,27 @@ padding:20px;
 }
 
 .hero-content h1{
-font-size:4.5rem;
+font-size:2.8rem; /* 👈 réduit comme ancien style */
 margin-bottom:20px;
 }
 
 .hero-content p{
 max-width:700px;
-line-height:1.8;
-font-size:1.1rem;
+line-height:1.6;
+font-size:1rem;
 }
 
 /* ===== PRICE BOX ===== */
 .price-box{
-margin:35px 0;
-padding:25px 40px;
+margin:25px 0;
+padding:20px 30px;
 border-radius:20px;
 background:rgba(255,215,0,.08);
 border:1px solid rgba(255,215,0,.35);
 }
 
 .price{
-font-size:4rem;
+font-size:3rem; /* 👈 réduit */
 color:#ffd700;
 font-weight:800;
 }
@@ -133,7 +131,7 @@ font-weight:800;
 /* ===== BUTTON ===== */
 .btn{
 display:inline-block;
-padding:18px 35px;
+padding:14px 28px;
 background:#ffd700;
 color:black;
 text-decoration:none;
@@ -149,37 +147,33 @@ box-shadow:0 0 25px rgba(255,215,0,.4);
 
 /* ===== SECTIONS ===== */
 section{
-padding:90px 8%;
+padding:60px 8%; /* 👈 réduit */
 }
 
+/* ===== INTRO ===== */
 .intro{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:50px;
+gap:40px;
 align-items:center;
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-margin-top:40px;
-}
-
+/* ===== IMAGES PLUS PETITES ===== */
 .card img{
 width:100%;
-height:420px;
+height:280px; /* 👈 IMPORTANT */
 object-fit:cover;
 border-radius:20px;
 }
 
 .overlay{
 text-align:center;
-margin-top:-60px;
-font-size:1.5rem;
+margin-top:-40px;
+font-size:1.1rem;
 font-weight:700;
 }
 
+/* ===== FEATURES ===== */
 .features{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -188,28 +182,30 @@ gap:25px;
 
 .feature{
 background:#111;
-padding:35px;
+padding:25px;
 border-radius:20px;
 }
 
+/* ===== CONTACT ===== */
 .contact form{
 display:flex;
 flex-direction:column;
-gap:20px;
+gap:15px;
 max-width:700px;
 margin:auto;
 }
 
 input,textarea{
-padding:18px;
-border-radius:12px;
+padding:14px;
+border-radius:10px;
 border:none;
 background:#111;
 color:white;
 }
 
+/* ===== FOOTER ===== */
 footer{
-padding:25px;
+padding:20px;
 text-align:center;
 opacity:.7;
 }
@@ -228,24 +224,12 @@ opacity:.7;
 
 <div class="logo">XpertSound.fr</div>
 
-<!-- 🔥 ICI ICÔNES AJOUTÉES SANS CHANGER TA STRUCTURE -->
 <div class="socials">
 
-<a href="https://wa.me/babyrasta34" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<a href="https://www.instagram.com/xpertsound/" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.facebook.com/XpertSound" target="_blank">
-<i class="fab fa-facebook"></i>
-</a>
-
-<a href="https://www.youtube.com/user/babyrasta034/featured" target="_blank">
-<i class="fab fa-youtube"></i>
-</a>
+<a href="https://wa.me/babyrasta34"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.instagram.com/xpertsound/"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/XpertSound"><i class="fab fa-facebook"></i></a>
+<a href="https://www.youtube.com/user/babyrasta034/featured"><i class="fab fa-youtube"></i></a>
 
 </div>
 
@@ -255,16 +239,13 @@ opacity:.7;
 
 <h1>DJ Mobile en Vélo à Montpellier</h1>
 
-<p>
-Une ambiance élégante, festive et originale pour vos soirées privées,
-anniversaires et événements.
-</p>
+<p>Ambiance Funky, Disco, Salsa et Reggae pour vos événements.</p>
 
 <div class="price-box">
 <span class="price">150€</span>
 </div>
 
-<a href="#contact" class="btn">Réserver votre soirée</a>
+<a href="#contact" class="btn">Réserver</a>
 
 </div>
 
@@ -275,7 +256,7 @@ anniversaires et événements.
 
 <div>
 <h2>Une prestation unique</h2>
-<p>Concept DJ mobile original, ambiance Funky, Disco, Salsa, Reggae.</p>
+<p>DJ mobile original, ambiance festive et professionnelle.</p>
 </div>
 
 <div>
@@ -314,7 +295,7 @@ anniversaires et événements.
 <section class="features">
 
 <div class="feature">DJ Mobile</div>
-<div class="feature">Ambiance Lumière</div>
+<div class="feature">Lumières</div>
 <div class="feature">Mix Live</div>
 
 </section>
