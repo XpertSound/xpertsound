@@ -620,7 +620,50 @@ card.style.boxShadow='none';
 const cards = document.querySelectorAll('.card');
 
 let currentAudio = null;
+let audioReady = false;
 
+/* 🔥 Précharge les audios pour autoriser lecture immédiate */
+const unlockAudios = {
+
+reggae: new Audio('mp3/reggae.mp3'),
+salsa: new Audio('mp3/salsa.mp3'),
+funky: new Audio('mp3/funky disco.mp3')
+
+};
+
+function unlockAudio(){
+
+if(audioReady) return;
+
+Object.values(unlockAudios).forEach(audio => {
+
+audio.volume = 0;
+
+audio.play()
+
+.then(() => {
+
+audio.pause();
+audio.currentTime = 0;
+
+audioReady = true;
+
+})
+
+.catch(()=>{});
+
+});
+
+document.removeEventListener('mousemove', unlockAudio);
+document.removeEventListener('click', unlockAudio);
+
+}
+
+/* 🔥 Déblocage automatique */
+document.addEventListener('mousemove', unlockAudio);
+document.addEventListener('click', unlockAudio);
+
+/* 🔥 MUSIQUE AU SURVOL */
 cards.forEach(card => {
 
 card.addEventListener('mouseenter', () => {
@@ -650,6 +693,8 @@ currentAudio.currentTime = 0;
 });
 
 });
+
+/* ===== FORMULAIRE CONTACT ===== */
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
 
